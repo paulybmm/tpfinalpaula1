@@ -1,0 +1,779 @@
+
+/***General**/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos Nav*/
+
+.navbar{
+    background: black!important;            /*color fondo nav*/
+}
+
+.nav-link{
+    color: rgb(245, 245, 245) !important; /*Color del texto del nav*/
+}
+.navbar-brand{
+    color: #fff !important; /*Color del texto Navbar (izquierda superior del menu)*/
+    padding-left: 1em !important;
+}
+.navbar-brand:hover{
+    color: #fff !important; /*Colo del texto Navbar (al posar el mouse arriba),(izquierda superior del menu) */
+}
+.navbar-toggler{
+    background: #fff !important;
+}
+
+
+/*Seccion home*/
+.home_contenedor{
+    min-height: 50vh;            /*altura minima de la seccion*/
+    background: black;         /*color de fondo*/
+    display: flex;               /*permite que la imagen quede junto al texto*/
+}
+.home_izquierdo{
+    margin-left: 10em;           /*margen izquierdo*/
+    margin-top: 3em;             /*margen superior*/
+    text-align: center;          /*alineacion horizontal del texto (centro)*/
+}
+.titulo_homeizquierdo1{
+    font-size: 28px;             /*tamaño de la fuente*/
+    color: #fff;               /*color de la fuente*/
+}
+.titulo_homeizquierdo2{
+    font-size: 35px;             /*tamaño de la fuente*/
+    color: #fff;              /*color de la fuente*/
+}
+.btn{
+    margin-top: 1em;                      /*margen superior del boton*/
+    border-color: #fff !important;      /*color del borde*/
+    color: #fff;                        /*color texto */
+}
+
+.home_derecho{
+    margin-left: 5em;                     /*margen izquierdo de la foto*/
+}
+
+
+/*Seccion Lo que Ofrezco*/
+.img_about{
+    width: auto;
+    height: auto;
+}
+.superior_loqueofrezco{
+    min-height: 60vh;                  
+    display: flex;
+}
+
+.izquierdo_loqueofrezco{
+    margin-left: 3em;
+    margin-top: 5em;
+}
+.contenedor_derecho_loqueofrezco{
+    margin-top: 5em;
+    margin-left: 4em;
+    margin-right: 10em;
+}
+.titulo_my resume{
+    font-size: 24px;                    /*tamaño del titulo*/
+}
+.parrafo_my resume{
+    font-size: 18px;                   /*tamaño fuente del parrafo*/
+    text-align: justify;               /*alineacion justificada del texto*/
+}
+.progress-bar{
+    background-color: rgb(0, 0, 0) !important;       /*color de fondo de las barras de progreso*/
+}
+.barras_progreso{
+    width: 70%;                        /* ancho de la barra */
+    height: 50vh;                      /*alto de la barra*/
+}
+
+.progress-bar-striped{
+    background-image: none !important; /* para que las barras no tengan imagen de fondo*/
+}
+.titulos_barraprogreso{
+    display: flex;
+}
+.titulo_barraprogreso{
+    margin-top: .7em;            /*margen superior de titulo barras*/
+    margin-bottom: .2em;         /*margen inferior de titulo barras*/
+    font-size: 18px;             /*tamaño de la fuente*/
+    color: black;              /*color de la fuente*/
+}
+.titulo_porcentaje{
+    margin-left: auto;           /*margen izquierdo del porcentaje numerico*/
+    margin-top: auto;            /*margen superior del porcentaje numerico*/
+    font-size: 16px;             /*tamaño de la fuente*/
+    color: black;              /*color de la fuente*/
+}
+
+.img{
+    width: 100%;
+    display: block;
+}
+h2{
+    text-align: justify;               /*alineaion justificada del texto*/
+    color: rgb(197, 197, 197);       /*color del texto*/
+    font-family:poppins-semiBold ;     /*familia tipografica*/
+    padding-top: 20px;                 /*espacio superior que le daal texto*/
+    justify-content: center;           /* centrado de los titulos */
+    text-decoration: underline;        /*subrayado del titulo*/
+}
+
+
+/*Lo que Ofrezco*/
+.inferior_loqueofrezco{
+    width: 100%;
+    min-height: 65vh;
+    background: black;
+    display: block;
+}
+.h2_inferior_loqueofrezco{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 2em;
+    padding-bottom: 1.2em;
+    color: #fff;
+    font-family: 'Lobster', sans-serif;
+}
+.loqueofrezco_seccionInterior{
+   display: flex;
+   justify-content:center;
+
+}
+.div_loqueofrezco{
+   width: 150px;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.div_loqueofrezco:nth-child(2){
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.texto_loqueofrezco{
+    display: block;
+}
+.img_inferior_loqueofrezco{
+    width: 100px;
+    height: 100px;
+   
+}
+.h2_title{
+    font-size: 20px;
+    text-decoration: none !important;
+    text-align: center;
+    color: #fff;
+}
+.h3_text{
+    font-size: 14px;
+    max-width: 150px;
+    text-align: center;
+    color: #7a7a7a;
+}
+
+/*Fin lo que ofrezco*/
+
+
+
+
+/*Seccion My Resume*/
+
+.superior_miresumen{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h2_resumen{
+    color: black;
+    font-family: 'Lobster', sans-serif;
+    font-size: 28px;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+    margin-left: 1em;
+}
+.ul_miResumen{
+    text-align: center;
+    width: 70%;
+    list-style-type: none;
+    margin-bottom: 3em;
+}
+.h2_miresumen{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    margin-bottom: .5em;
+}
+.h3_miresumen{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1.5em;
+}
+
+
+.bi-circle-fill{
+    width: 6px !important;
+    height: 6px !important;
+    color: black !important;
+} 
+
+.inferior_miresumen{
+    min-height: 30vh;
+    background: black;
+}
+
+.inferior_miresumen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h2_inferior_miresumen{
+    font-size: 16px;
+    width: 70%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+
+
+
+
+/*Seccion Portfolio*/
+.h2_portfolio{
+    color: black;
+    font-family: 'Lobster', sans-serif;
+    font-size: 28px;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.portfolios{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+.btn{
+    border-color: #fff;
+    border-radius: 5%;
+    background-color: black;
+}
+
+.card-img-top{
+    height: 250px;
+    object-fit: cover; /*mantiene la proporcion de la foto*/
+}
+
+.card:nth-child(2){ /*margen del lado izquierdo y derecha de la Card 2 (del medio)*/
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+
+
+/*seccion contacto*/
+
+.contacto{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+}
+.h2_contacto{
+    color: #fff;
+    font-family: 'Lobster', sans-serif;
+    font-size: 28px;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+    text-align: center;
+}
+.formulario_contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formulario_nombre_mail{
+    display: flex;
+    justify-content: center;
+}
+.contenedor_textlabel{
+    display: flex;
+    justify-content: center;
+}
+
+.form-label{
+    width: 300px;
+    margin: .5em;
+    color: #fff;
+}
+
+.form-control{
+    padding: .5em;
+}
+
+.form_nombre_mail{
+    margin-right: 2em;
+}
+.form-floating{
+    margin: 2em;
+    width: 700px;
+}
+
+.boton_formulario{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border-radius: 8px;
+    background: #fff !important;
+    color: black !important;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/*Footer*/
+footer{
+    min-height: 8vh;
+    display: flex;
+    justify-content: center;         /*Centrado*/
+    align-content: center;           /*Centrado*/
+    padding-top: .5rem;               /*Espacio superior en el footer*/
+    padding-bottom: .5rem;            /*Espacio de abajo en el footer*/        
+    color: rgb(0, 0, 0);                  /*Color del texto*/
+}
+
+.span{
+    font-size: 12px;
+}
+
+
+
+
+
+/*Estilos Celular*/
+@media screen and (max-width: 576px){
+    /*Seccion Home*/
+    .home_contenedor{
+        display: block;
+    }
+    .home_izquierdo{
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+    .titulo_homeizquierdo1{
+        padding-top: 1em;
+        padding-left: 1em;
+        text-decoration: none; /*Sin subrayado*/
+    }
+    .titulo_homeizquierdo2{
+        padding-top: .4em;
+    }
+    .home_derecho{
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 3em;
+    }
+
+    /*Seccion Lo que Ofrezco*/
+    .img_about{
+        display: none;
+    }
+    .superior_loqueofrezco{ 
+        display: block;
+    }
+    .izquierdo_loqueofrezco{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-top: 3em;
+    }
+    .contenedor_derecho_loqueofrezco{
+        margin-top: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .titulo_mihistoria{
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: .5em;
+    }
+    .parrafo_mihistoria{
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .barras_progreso{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /*Lo que ofrezco Inferior*/
+    
+    .inferior_loqueofrezco{
+        width: 100%;
+        min-height: 65vh;
+        background: black;
+        display: block;
+    }
+    .loqueofrezco_seccionInterior{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .div_loqueofrezco{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 3em;
+    }
+    .div_loqueofrezco:nth-child(2){
+        margin-left:0;
+        margin-right: 0;
+    }
+
+    .texto_loqueofrezco{
+        text-align: center;
+
+    }
+    .img_inferior_loqueofrezco{
+        width: 110px;
+        height: 110px;
+    }
+    .h2_title{
+        font-size: 22px;
+        text-decoration: none !important;
+        text-align: center;
+        color: #fff;
+    }
+    .h3_text{
+        font-size: 16px;
+        max-width: 150px;
+        text-align: center;
+        color: #7a7a7a;
+    }
+
+    /*Fin lo que ofrezco*/
+
+
+    /*Seccion My Resume*/
+
+    .ul_miResumen{
+        width: 80%;
+    }
+    .h2_resumen{
+        padding-bottom: 0;
+    }
+
+
+    /*Seccion Portfolio*/
+    .h2_portfolio{
+        color: black;
+        font-family: 'Lobster', sans-serif;
+        font-size: 28px;
+        padding-top: 2em;
+        padding-bottom: 0em;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .card{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3em;
+    }
+    .card:nth-child(3){
+        margin-bottom: 0;
+    }
+    .card:nth-child(2){ /*margen del lado izquierdo y derecha del Card 2 (del medio)*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .portfolios{
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-top: 3em;
+        padding-bottom: 5em;
+    }
+    .btn{
+        border-color: #fff;
+        border-radius: 8px;
+        background-color: black;
+    }
+    .card-img-top{
+        height: 250px;
+        object-fit: cover; /*mantiene la proporcion de la foto*/
+    }
+
+
+
+
+    /*seccion contacto*/
+
+    .contacto{
+        width: 100%;
+        min-height: 140vh;
+        background: black;     
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .h2_contacto{
+        color: #fff;
+        font-family: 'Lobster', sans-serif;
+        font-size: 28px;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .formulario_contenedor{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.5em;
+    }
+    .formulario_nombre_mail{
+        display: block;
+    }
+
+    .form-label{
+        margin-top: .5em;
+        color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+    .form-control{
+        padding: .5em;
+        width: 100%;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    .form-control:nth-child(2){
+        margin-bottom: 1em;
+    }
+
+    .form_nombre_mail{
+        margin-right: 0;
+    }
+    .form-floating{
+        margin: 2em;
+        width: 300px;
+    }
+
+    .boton_formulario{
+        padding: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        border-radius: 8px;
+        background: #fff !important;
+        color: black !important;
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+
+
+/*Vista Tablet*/
+@media screen and (min-width: 576px) and (max-width:992px){
+    /*Seccion Home*/
+    .home_contenedor{
+        display: block;
+    }
+    .home_izquierdo{
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+    .titulo_homeizquierdo1{
+        padding-top: 1em;
+        padding-left: 1em;
+        text-decoration: none; /*Sin subrayado*/
+    }
+    .titulo_homeizquierdo2{
+        padding-top: .4em;
+    }
+    .home_derecho{
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 3em;
+    }
+
+    /*Seccion Lo que Ofrezco*/
+    .img_about{
+        display: none;
+    }
+    .superior_loqueofrezco{ 
+        display: block;
+    }
+    .izquierdo_loqueofrezco{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding-top: 3em;
+    }
+    .contenedor_derecho_loqueofrezco{
+        margin-top: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .titulo_mihistoria{
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: .5em;
+    }
+    .parrafo_mihistoria{
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .barras_progreso{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /*Lo que Ofrezco*/
+    .inferior_loqueofrezco{
+        min-height: 75vh;
+    }
+
+
+    /*Seccion Portfolio*/
+    .h2_portfolio{
+        padding-top: 3em;
+        padding-bottom: 0;
+    }
+    .portfolios{
+        padding-top: 3em;
+        padding-bottom: 4em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .btn{
+        border-color: #fff;
+        border-radius: 5%;
+        background-color: black;
+    }
+
+    .card-img-top{
+        height: 200px;
+        object-fit: cover; /*mantiene la proporcion de la foto*/
+    }
+
+    .card:nth-child(2){ /*margen del lado izquierdo y derecha del Card 2 (del medio)*/
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    /*seccion contacto*/
+
+    .contacto{
+        width: 100%;
+        min-height: 140vh;
+        background: black;     
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .h2_contacto{
+        color: #fff;
+        font-family: 'Lobster', sans-serif;
+        font-size: 28px;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .formulario_contenedor{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.5em;
+    }
+    .formulario_nombre_mail{
+        display: block;
+    }
+
+    .form-label{
+        margin-top: .5em;
+        color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    .form-control{
+        padding: .5em;
+        width: 100%;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    .form-control:nth-child(2){
+        margin-bottom: 1em;
+    }
+
+    .form_nombre_mail{
+        margin-right: 0;
+    }
+    .form-floating{
+        margin: 2em;
+        width: 500px;
+    }
+
+    /*Footer*/
+    footer{
+        min-height: 10vh;
+    }
+}
+
+/*Vista Desktop Unicamente para la foto del About*/
+@media screen and (min-width: 1000px) and (max-width: 1060px){
+
+   .img_about{
+        display: none;
+   }
+
+    /*seccion contacto*/
+    .contacto{
+        min-height: 120vh;     
+    }
+}
+
+
+
+
+
+
